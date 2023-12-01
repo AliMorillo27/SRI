@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestión de Facturas</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Crear Nueva Factura</h2>
+        <form action="envio.php" method="post">
+            <div class="form-group">
+                <label for="nombreComercial">Nombre Comercial:</label>
+                <input type="text" class="form-control" name="nombreComercial" id="nombreComercial">
+            </div>
+            <div class="form-group">
+                <label for="razonSocial">Razón Social:</label>
+                <input type="text" class="form-control" name="razonSocial" id="razonSocial">
+            </div>
+            <div class="form-group">
+                <label for="direccionMatriz">Dirección de la Matriz:</label>
+                <input type="text" class="form-control" name="direccionMatriz" id="direccionMatriz">
+            </div>
+            <div class="form-group">
+                <label for="direccionEstablecimiento">Dirección del Establecimiento:</label>
+                <input type="text" class="form-control" name="direccionEstablecimiento" id="direccionEstablecimiento">
+            </div>
+            <div class="form-group">
+                <label for="identificacionAdquirente">Identificación del Adquirente:</label>
+                <input type="text" class="form-control" name="identificacionAdquirente" id="identificacionAdquirente">
+            </div>
+            <div class="form-group">
+                <label for="fechaEmision">Fecha de Emisión:</label>
+                <input type="date" class="form-control" name="fechaEmision" id="fechaEmision">
+            </div>
+            <div class="form-group">
+                <label for="descripcionBienServicio">Descripción del Bien o Servicio:</label>
+                <textarea class="form-control" name="descripcionBienServicio" id="descripcionBienServicio"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" class="form-control" name="cantidad" id="cantidad">
+            </div>
+            <div class="form-group">
+                <label for="fechaCaducidad">Fecha de Caducidad:</label>
+                <input type="date" class="form-control" name="fechaCaducidad" id="fechaCaducidad">
+            </div>
+            <div class="form-group">
+                <label for="formaPago">Forma de Pago:</label>
+                <input type="text" class="form-control" name="formaPago" id="formaPago">
+            </div>
+            <div class="form-group">
+                <label for="valorFormaPago">Valor de la Forma de Pago:</label>
+                <input type="number" step="0.01" class="form-control" name="valorFormaPago" id="valorFormaPago">
+            </div>
+            <div class="form-group">
+                <label for="datosImprenta">Datos de la Imprenta:</label>
+                <textarea class="form-control" name="datosImprenta" id="datosImprenta"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="ruc">RUC:</label>
+                <input type="text" class="form-control" name="ruc" id="ruc">
+            </div>
+            <div class="form-group">
+                <label for="numeroFactura">Número de Factura:</label>
+                <input type="text" class="form-control" name="numeroFactura" id="numeroFactura">
+            </div>
+            <div class="form-group">
+                <label for="autorizacionSRI">Autorización SRI:</label>
+                <input type="text" class="form-control" name="autorizacionSRI" id="autorizacionSRI">
+            </div>
+            <div class="form-group">
+                <label for="fechaAutorizacion">Fecha de Autorización:</label>
+                <input type="date" class="form-control" name="fechaAutorizacion" id="fechaAutorizacion">
+            </div>
+            <div class="form-group">
+                <label for="informacionAdicional">Información Adicional:</label>
+                <textarea class="form-control" name="informacionAdicional" id="informacionAdicional"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" name="crearFactura">Crear Factura</button>
+        </form>
+
+        <!-- Aquí iría el código PHP para mostrar las facturas existentes, similar al ejemplo anterior -->
+
+    </div>
+
+    <!-- Incluir Bootstrap JS y dependencias (Opcional, para funcionalidades JS de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
